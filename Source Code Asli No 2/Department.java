@@ -3,17 +3,14 @@ package id.ac.polban.employee.model;
 public class Department {
     private String name;
 
-   //constructor
     public Department(String name) {
         this.name = name;
     }
 
-   //getter
     public String getName() {
         return name;
     }
 
-   //setter
     public void setName(String name) {
         this.name = name;
     }

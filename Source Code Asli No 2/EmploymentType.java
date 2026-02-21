@@ -3,17 +3,14 @@ package id.ac.polban.employee.model;
 public class EmploymentType {
     private String type;
 
-    //constructor
     public EmploymentType(String type) {
         this.type = type;
     }
 
-    //getter
     public String getType() {
         return type;
     }
 
-    //setter
     public void setType(String type) {
         this.type = type;
     }

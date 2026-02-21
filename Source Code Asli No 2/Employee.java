@@ -1,70 +1,56 @@
 package id.ac.polban.employee.model;
 
 public class Employee {
-    //menambahkan attribute static
-    private static int stepId = 1;
     private int id;
     private String name;
     private Department department;
     private EmploymentType type;
     private double salary;
 
-    //constructor
-    public Employee(String name, Department department, EmploymentType type, double salary) {
-        //langsung counter id selanjutnya stelah selesai assign id.
-        this.id = stepId;
-        stepId++;
-
+    public Employee(int id, String name, Department department, EmploymentType type, double salary) {
+        this.id = id;
         this.name = name;
         this.department = department;
         this.type = type;
         this.salary = salary;
     }
 
-    public static int getstepId(){
-        return stepId;      
-    }
-    //getter id
     public int getId() {
         return id;
     }
 
-    //getter name
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
 
-    //setter name
     public void setName(String name) {
         this.name = name;
     }
 
-    //getter department
     public Department getDepartment() {
         return department;
     }
 
-    //setter department
     public void setDepartment(Department department) {
         this.department = department;
     }
 
-    //getter type
     public EmploymentType getType() {
         return type;
     }
 
-    //setter type
     public void setType(EmploymentType type) {
         this.type = type;
     }
 
-    //getter salary
     public double getSalary() {
         return salary;
     }
 
-    //setter salary
     public void setSalary(double salary) {
         this.salary = salary;
     }
